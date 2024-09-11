@@ -8,8 +8,8 @@ Vue.use(Router);
 import ReservationReservationManager from "./components/listers/ReservationReservationCards"
 import ReservationReservationDetail from "./components/listers/ReservationReservationDetail"
 
-import Manager from "./components/listers/Cards"
-import Detail from "./components/listers/Detail"
+import PointPointManager from "./components/listers/PointPointCards"
+import PointPointDetail from "./components/listers/PointPointDetail"
 
 
 
@@ -29,14 +29,14 @@ export default new Router({
             },
 
             {
-                path: '//',
-                name: 'Manager',
-                component: Manager
+                path: '/points/points',
+                name: 'PointPointManager',
+                component: PointPointManager
             },
             {
-                path: '///:id',
-                name: 'Detail',
-                component: Detail
+                path: '/points/points/:id',
+                name: 'PointPointDetail',
+                component: PointPointDetail
             },
 
 

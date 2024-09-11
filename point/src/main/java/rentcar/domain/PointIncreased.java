@@ -13,6 +13,10 @@ public class PointIncreased extends AbstractEvent {
 
     private Long id;
 
+    public PointIncreased(Point aggregate) {
+        super(aggregate);
+    }
+
     public PointIncreased() {
         super();
     }

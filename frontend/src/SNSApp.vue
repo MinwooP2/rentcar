@@ -48,13 +48,13 @@
 
                     <v-list-item
                         class="px-2"
-                        key=""
-                        to="//"
+                        key="points"
+                        to="/points/points"
                         @click="changeUrl()"
                         color="primary"
                         style="font-weight:700;"
                     >
-                        
+                        Point
                     </v-list-item>
 
 
@@ -145,10 +145,10 @@ export default {
                 ImageUrl: '',
             },
             { 
-                title: '', 
+                title: 'Point', 
                 description: '', 
-                key: '', 
-                route: '//',
+                key: 'points', 
+                route: '/points/points',
                 ImageUrl: '',
             },
             

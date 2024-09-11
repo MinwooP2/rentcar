@@ -18,7 +18,7 @@ import rentcar.domain.*;
 public class PolicyHandler {
 
     @Autowired
-    Repository Repository;
+    PointRepository pointRepository;
 
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString) {}
@@ -32,8 +32,9 @@ public class PolicyHandler {
         System.out.println(
             "\n\n##### listener IncreasePoint : " + reserved + "\n\n"
         );
-        // Sample Logic //
 
+        // Sample Logic //
+        Point.increasePoint(event);
     }
 }
 //>>> Clean Arch / Inbound Adaptor

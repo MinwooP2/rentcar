@@ -9,15 +9,15 @@ import rentcar.infra.AbstractEvent;
 //<<< DDD / Domain Event
 @Data
 @ToString
-public class PointDecreased extends AbstractEvent {
+public class NotAvailabled extends AbstractEvent {
 
     private Long id;
 
-    public PointDecreased(Point aggregate) {
+    public NotAvailabled(Point aggregate) {
         super(aggregate);
     }
 
-    public PointDecreased() {
+    public NotAvailabled() {
         super();
     }
 }

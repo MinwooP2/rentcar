@@ -16,9 +16,9 @@ spring:
         - id: point
           uri: http://localhost:8083
           predicates:
-            - Path=/undefined/**, 
+            - Path=/points/**, 
         - id: dashboard
-          uri: http://localhost:0
+          uri: http://localhost:8084
           predicates:
             - Path=, 
         - id: frontend
@@ -52,7 +52,7 @@ spring:
         - id: point
           uri: http://point:8080
           predicates:
-            - Path=/undefined/**, 
+            - Path=/points/**, 
         - id: dashboard
           uri: http://dashboard:8080
           predicates:
